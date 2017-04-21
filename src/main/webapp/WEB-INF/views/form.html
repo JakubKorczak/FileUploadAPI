@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>File upload API - DEMO </title>
+    <link rel="stylesheet" th:href="@{static/css/styles.css}"/>
+</head>
+<body>
+
+<h1>File upload:</h1>
+    <form action="http://localhost:8080/form" method="post">
+    <table style="border:3px; border-style:solid; border-color:#020000; padding: 1em;" >
+        <tbody>
+        <tr>
+            <td>
+                <label> File is ready to upload: </label>
+            </td>
+            <td>
+                <label>testFile.test</label>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="RESET"/></td>
+            <td><input type="submit" value="SEND"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+</body>
+</html>
